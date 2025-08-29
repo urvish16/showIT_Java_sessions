@@ -31,6 +31,7 @@ public class DepartmentController {
 
     @PutMapping("/{id}")
     public Department update(@PathVariable Long id, @RequestBody Department dept) {
+
         return service.update(id, dept);
     }
 

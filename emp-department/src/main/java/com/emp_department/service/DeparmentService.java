@@ -14,10 +14,12 @@ public class DeparmentService {
     private DepartmentRepository departmentRepository;
 
     public Department save(Department dept) {
+
         return departmentRepository.save(dept);
     }
 
     public List<Department> getAll() {
+
         return departmentRepository.findAll();
     }
 
@@ -35,6 +37,7 @@ public class DeparmentService {
     }
 
     public void delete(Long id) {
+
         departmentRepository.deleteById(id);
     }
 }

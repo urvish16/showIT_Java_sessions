@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="singletonBook" class="com.example.Book" scope="singleton">
+        <property name="title" value="Spring in Action"/>
+    </bean>
+
+    <bean id="prototypeBook" class="com.example.Book" scope="prototype">
+        <property name="title" value="Spring Boot Essentials"/>
+    </bean>
+</beans>
